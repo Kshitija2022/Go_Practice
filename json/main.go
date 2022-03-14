@@ -52,4 +52,9 @@ func Decodedata() {
 	} else {
 		fmt.Println("JSON WAS NOT VALID")
 	}
+      var mydata map[string]interface{}
+	    json.Unmarshal(Jsondatafromweb, &mydata)
+	    fmt.Printf("%#v\n", mydata)
+
 }
+
